@@ -181,9 +181,6 @@ body{
 
 @media (max-width: 1024px) {
 
-    body{
-        overflow-x: hidden;
-    }
 
     header{
         width: 98vw;
@@ -193,16 +190,23 @@ body{
         justify-content: space-between;
     }
     .projects{
-        width: 90vw;
+        width: 100vw;
         height: auto;
         grid-template-columns: repeat(1, 1fr);
     }
     .project{
-        width: 90vw;
+        width: 84vw;
+        height: auto;
+        padding: 16px;
     }
 
     .title h1{
-        font-size: 120px;
+        font-size: 4em;
+      
+    }
+    .title p{
+        font-size: .8rem;
+        text-align: center;
       
     }
 
@@ -214,5 +218,8 @@ body{
     }
     .social{
         height: 12px;
+    }
+    .social-links{
+        height: 20px;
     }
 }
