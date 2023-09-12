@@ -230,7 +230,6 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        width: 40vw;
-        height: 8px;
+        height: 100%;
     }
 }
