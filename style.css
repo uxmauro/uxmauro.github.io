@@ -217,13 +217,13 @@ body{
         text-align: center;
     }
     .social{
-        height: 12px;
+        height: 8px;
     }
 
     .social img{
         object-fit: contain;
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
     }
 
     .social-links{
@@ -231,6 +231,6 @@ body{
         flex-direction: row;
         justify-content: flex-end;
         width: 40vw;
-        height: 12px;
+        height: 8px;
     }
 }
