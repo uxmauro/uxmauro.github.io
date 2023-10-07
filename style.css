@@ -21,6 +21,26 @@ body{
     justify-items: center;
 }
 
+
+
+.p-image img{
+    opacity: 0;
+    transition: opacity 0s ease-in;
+}
+
+.p-image img {
+    animation: fade-in 0.5s ease-in 0s forwards;
+  }
+
+
+
+
+
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 .top-header{
  display: flex;
  flex-direction: row;
@@ -90,12 +110,13 @@ body{
 
 
 .projects{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     justify-items: center;
-    width: 60vw;
+    max-width: 60vw;
     gap: 32px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     margin-top: 20px;
     margin-bottom: 80px;
 }
@@ -105,6 +126,7 @@ body{
     flex-direction: column;
     align-items: center;
     width: auto;
+    width: 44%;
     height: 360px;
     background-color: #000;
     border-radius: 16px;
@@ -126,7 +148,7 @@ body{
 
 .project:hover img{
         filter: brightness(0.98);
-  
+
 }
 
 .project-details{
@@ -143,12 +165,20 @@ body{
 
 
 .tags{
+    opacity: 0;
+    transition-delay: 2s;
+    transition: opacity 0.5s ease-in;
     width: 100%;
     display: flex;
     flex-direction: row;
     gap: 12px;
     margin-top: 8px;
     overflow-x: scroll;
+}
+
+.tags{
+
+    animation: fade-in 0.5s ease-in 0.5s forwards;;
 }
 
 .tags::-webkit-scrollbar {
@@ -202,12 +232,12 @@ body{
 
     .title h1{
         font-size: 6em;
-      
+
     }
     .title p{
         font-size: .8rem;
         text-align: center;
-      
+
     }
 
     .top-header h3 {
@@ -233,3 +263,37 @@ body{
         height: 100%;
     }
 }
+
+
+
+/* Animated Loading */
+
+.animated-bg {
+    background-image: linear-gradient(
+      to right,
+      #131313 0%,
+      #1c1c1c 10%,
+      #131313 20%,
+      #131313 100%
+    );
+    background-size: 200% 100%;
+    animation: bgPos 1s linear infinite;
+  }
+
+  .animated-bg-text {
+    border-radius: 8px;
+    display: inline-block;
+    margin: 16px 0px;
+    height: 32px;
+    width: 70%;
+  }
+
+  @keyframes bgPos {
+    0% {
+      background-position: 50% 0;
+    }
+
+    100% {
+      background-position: -150% 0;
+    }
+  }
