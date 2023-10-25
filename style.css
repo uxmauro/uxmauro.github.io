@@ -227,7 +227,7 @@ body{
         margin: auto;
         justify-self: center;
         justify-content: center;
-        width: 100vw;
+        max-width: 80vw;
         height: auto;
     }
     .project{
