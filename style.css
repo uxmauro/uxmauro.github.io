@@ -223,7 +223,7 @@ body{
     }
     .projects{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         margin: auto;
         justify-self: center;
         justify-content: center;
