@@ -12,6 +12,13 @@ const projectImgs = [  "https://user-images.githubusercontent.com/77753281/26679
 
 ]
 
+document.addEventListener('mousemove', (e) => {
+  const customCursor = document.querySelector('.custom-cursor');
+  customCursor.style.left = e.clientX - 16 + 'px'; // Use clientX for relative to the window or pageX for relative to the document
+  customCursor.style.top = e.clientY - 4 +'px';
+});
+
+
 const projectTitles = ['Do It - Todo App','Tic Tac Toe','Library','Restaurant Page','Calculator','Rock, Paper, Scissors']
 
 setTimeout(getData, 1000)
