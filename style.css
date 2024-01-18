@@ -223,7 +223,9 @@ body{
         width: 100%;
         height: 264px;
     }
-
+    .custom-cursor{
+        display: none;
+    }
 
     header{
         width: 98vw;
